@@ -1,0 +1,72 @@
+.app-rating {
+  padding: 200px 0;
+  justify-content: space-around;
+  background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png);
+  background-size: cover;
+  background-position: center center;
+  width: 100vw;
+}
+.rating-value {
+  font-size: 160px;
+  line-height: 120px;
+  padding-right: 16px;
+  font-weight: 700;
+}
+.rating-stars {
+  width: 179px;
+  height: 28px;
+  margin-top: 20px;
+}
+.rating-platform {
+  font-size: 60px;
+  line-height: 55px;
+  padding-left: 16px;
+  font-weight: 700;
+}
+.rating-block {
+  margin-bottom: 70px;
+}
+.rating-icon {
+  height: 30px;
+  margin-right: 6px;
+}
+.rating-btn {
+  padding: 15px 30px !important;
+  font-size: 20px;
+  margin-top: 40px;
+}
+
+@media all and (max-width: 1279px) {
+  .app-rating {
+    padding: 100px 0;
+  }
+  .rating-value {
+    font-size: 100px;
+  }
+  .rating-stars {
+    width: 120px;
+    height: 18px;
+  }
+  .rating-platform {
+    font-size: 45px;
+    line-height: 45px;
+  }
+}
+@media all and (max-width: 767px) {
+  .app-rating {
+    padding: 70px 0;
+    flex-direction: column;
+  }
+  .rating-value {
+    font-size: 90px;
+  }
+  .rating-stars {
+    width: 120px;
+    height: 18px;
+  }
+  .rating-platform {
+    font-size: 31px;
+    line-height: 32px;
+    align-self: center;
+  }
+}

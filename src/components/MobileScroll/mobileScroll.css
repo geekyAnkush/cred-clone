@@ -1,0 +1,98 @@
+.mobile-scroll {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  background-image: url(https://web-images.credcdn.in/_next/assets/images/home-page/hero-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.scroll-wrapper {
+  width: 50%;
+}
+.scroll-full-screen {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.mobile-mockup-wrapper {
+  width: 50%;
+}
+.mobile-mockup {
+  position: sticky;
+  top: 150px;
+  transform: translateX(30%);
+  width: 350px;
+  height: 600px;
+  border-radius: 46px;
+  padding: 16px 14px;
+  max-height: 100vh;
+  box-shadow: rgb(176 176 178 / 16%) 0px -5px 6px 0px inset,
+    rgb(0 0 0 / 24%) 4px 6px 11px 1px inset;
+}
+.mobile-screen {
+  background-color: var(--mobile-bg);
+  overflow: hidden;
+  height: 100%;
+  border-radius: inherit;
+}
+.mobile-screen-img {
+  height: 100%;
+  object-fit: contain;
+}
+.screen-heading {
+  font-size: 105px;
+  font-weight: 700;
+  line-height: 105px;
+}
+.screen-text {
+  opacity: 0;
+  padding-bottom: 80px;
+}
+.text-visible {
+  opacity: 1;
+  transition: 0.75s;
+}
+.screen-description {
+  font-size: 20px;
+  margin-top: 52px;
+  font-weight: 600;
+}
+@media all and (max-width: 1279px) {
+  .mobile-scroll {
+    padding-bottom: 30px;
+  }
+  .mobile-mockup {
+    width: 272px;
+    height: 480px;
+    transform: translateX(10%);
+  }
+  .screen-heading {
+    font-size: 70px;
+    line-height: 70px;
+  }
+  .screen-description {
+    font-size: 18px;
+    margin-top: 44px;
+  }
+}
+@media all and (max-width: 767px) {
+  .screen-heading {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .mobile-mockup {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .mobile-mockup-wrapper {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-80px);
+  }
+  .scroll-wrapper {
+    width: 100%;
+  }
+}
